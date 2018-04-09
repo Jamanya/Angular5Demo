@@ -1,16 +1,16 @@
 <div class="container color-dark">
   <div class="col">
-    <p>Add a bucket list item</p>
+    <p>Development Task List</p>
   </div>
   <div class="col">
-      <p>Your Bucket List: ({{ itemCount }}) Items</p>
+      <p>Your Task List: ({{ itemCount }}) Items</p>
     </div>
 </div>
 <div class="container color-light" [@goals]="goals.length">
     <div class="col">
       <p class="sm">enter items below</p>
       <form action="#">
-        <input type="text"  class="txt" name="item" placeholder="lifegoal" [(ngModel)]="goalTxt">
+        <input type="text"  class="txt" name="item" placeholder="Task Item" [(ngModel)]="goalTxt">
         <input type="submit" class="btn" [value]="btnTxt" (click)="addGoal()">
       </form>
     </div>
